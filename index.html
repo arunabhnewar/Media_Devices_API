@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>MediaDevices API</title>
+
+        <!------custom css link------>
+        <link rel="stylesheet" href="./css/style.css">
+
+
+        <!------bootstrap css link--------->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+
+        <!------bootstrap scrip link--------->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <div class="text-center ">
+            <video id="video-content" width="400" height="350" autoplay></video>
+        </div>
+
+
+        <div class="text-center ">
+            <button id="turn_off_button" class="btn turnoff_btn">Camera Turn Off</button>
+            <button id="mute_button" class="btn mute_btn">Mute</button>
+            <button id="share_screen_button" class="btn share_screen">Share Screen</button>
+        </div>
+
+        <div class="text-center my-3">
+            <h6 class="select_cam_title mt-5">Select Your Cam</h6>
+            <select id="camera_select" ria-label="Default select example" class="form-select">
+            </select>
+        </div>
+
+        <div class="text-center my-3">
+            <h6 class="select_mic_title mt-2">Select Your Microphone</h6>
+            <select id="mic_select" aria-label="Default select example" class="form-select">
+            </select>
+        </div>
+
+
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
